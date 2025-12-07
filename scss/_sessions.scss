@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+.sessions {
+  padding: 100px 0;
+
+  &-wrapper {
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 42px;
+    font-family: $secondaryFont;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 260px;
+    gap: 25px;
+    grid-auto-columns: 416px;
+    .session {
+      background-image: url("/images/session-image.jpg");
+
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      display: flex;
+      align-items: end;
+
+      padding: 40px;
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        font-family: $secondaryFont;
+      }
+    }
+    .session1 {
+      grid-row: span 2;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .sessions-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .sessions-list {
+    grid-template-columns: 1fr;
+  }
+  .session1 {
+    grid-row: auto !important;
+  }
+  .sessions-title {
+    font-size: 32px;
+  }
+  .sessions-wrapper {
+    gap: 40px;
+  }
+  .sessions {
+    padding: 50px 0 !important;
+  }
+}
