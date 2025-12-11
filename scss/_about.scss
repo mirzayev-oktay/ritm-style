@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+.about {
+  padding: 150px 0;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  &-card {
+    display: flex;
+    gap: 84px;
+    align-items: center;
+  }
+
+  &-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &-img {
+    border-radius: 20px;
+  }
+}
