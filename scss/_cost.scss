@@ -15,20 +15,38 @@
 
 .cost {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 31px;
+}
 
+.cost-box {
+  display: flex;
   align-items: center;
-  &1 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  &2 {
-    font-family: $secondaryFont;
+  justify-content: center;
+  gap: 134px;
+}
+
+.cost-card {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+@media (max-width: 1024px) {
+  .cost-box {
+    flex-direction: column-reverse;
+    gap: 50px;
   }
 }
-.box {
-  display: flex;
-  gap: 134px;
-  justify-content: center;
+
+@media (max-width: 570px) {
+  .cost-img {
+    width: 100%;
+  }
+  .cost-wrapper {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
 }
