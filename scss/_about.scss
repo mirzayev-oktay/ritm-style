@@ -24,3 +24,23 @@
     border-radius: 20px;
   }
 }
+@media (max-width: 1100px) {
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &-content {
+      p {
+        max-width: 500px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .about-img {
+    width: 100% !important;
+  }
+  .about-card {
+    gap: 30px;
+  }
+}
