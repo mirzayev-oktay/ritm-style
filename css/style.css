@@ -41,7 +41,7 @@
   padding: 70px 0;
 }
 .hero-wrapper {
-  background-image: url("/images/hero-img.jpg");
+  background-image: url("../images/hero-img.jpg");
   min-height: 600px;
   border-radius: 10px;
   display: flex;
@@ -93,7 +93,7 @@
   grid-auto-columns: 416px;
 }
 .sessions-list .session {
-  background-image: url("/images/session-image.jpg");
+  background-image: url("../images/session-image.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 10px;
