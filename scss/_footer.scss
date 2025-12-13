@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+.footer {
+  padding: 30px 0;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  font-weight: 400;
+  font-size: 14px;
+}
